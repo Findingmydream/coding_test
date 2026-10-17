@@ -13,14 +13,13 @@ coding_test/
 │       └── dfs_bfs.cpp
 └── programmers/
     ├── lv1/
-    │   ├── string/
-    │   ├── math/
     │   ├── brute_force/
-    │   └── stack_queue/
+    │   ├── stack_queue/
+    │   └── unclassified/
     ├── lv2/
     │   ├── bfs_dfs/
     │   ├── stack_queue/
-    │   └── greedy/
+    │   └── unclassified/
     └── lv3/
         └── graph/
 ```
@@ -32,7 +31,7 @@ coding_test/
 - 같은 문제의 다른 풀이는 `_bfs`, `_floyd_warshall`처럼 풀이 방식을 붙입니다.
 - 알고리즘 개념과 연습 코드는 `algorithm/유형/`에 저장합니다.
 - 프로그래머스 고득점 Kit의 공식 알고리즘 분류를 우선합니다. 같은 문제의 다른 풀이도 같은 유형 폴더에 둡니다.
-- 공식 알고리즘 분류가 없는 연습문제는 문제 설명을 바탕으로 분류합니다. 문제를 확인할 수 없으면 `unclassified/`에 둡니다.
+- 공식 알고리즘 분류가 없는 문제는 각 레벨의 `unclassified/`(알고리즘 미분류) 폴더에 저장합니다. README의 풀이 유형은 참고용이며 공식 분류와 구분합니다.
 - 알고리즘 유형과 풀이 상태는 아래 표에서 관리합니다.
 - 편집기 복구 파일과 빌드 결과는 Git에 올리지 않습니다.
 
@@ -46,11 +45,11 @@ coding_test/
 
 | 문제 | 코드 | 유형 | 상태 | 메모 |
 | --- | --- | --- | --- | --- |
-| 가운데 글자 가져오기 | [코드](programmers/lv1/string/가운데_글자_가져오기.cpp) | 문자열 | 검증 필요 | |
-| 두 정수 사이의 합 | [코드](programmers/lv1/math/두_정수_사이의_합.cpp) | 수학 | 수정 필요 | 한 파일에 동일한 `solution` 함수가 두 개 있어 풀이 분리 필요 |
+| 가운데 글자 가져오기 | [코드](programmers/lv1/unclassified/가운데_글자_가져오기.cpp) | 문자열 | 검증 필요 | |
+| 두 정수 사이의 합 | [코드](programmers/lv1/unclassified/두_정수_사이의_합.cpp) | 수학 | 수정 필요 | 한 파일에 동일한 `solution` 함수가 두 개 있어 풀이 분리 필요 |
 | 모의고사 | [코드](programmers/lv1/brute_force/모의고사.cpp) | 완전탐색 | 검증 필요 | |
-| 최대공약수와 최소공배수 | [코드](programmers/lv1/math/최대공약수와_최소공배수.cpp) | 수학 | 수정 필요 | `answer` 중복 선언 제거 필요, `gcd`·`lcm`은 C++17 사용 |
-| 노란불 신호등 | [코드](programmers/lv1/brute_force/노란불_신호등.cpp) | 완전탐색·수학 | 작성 중 | `te`만 작성되어 있어 풀이 구현 필요 |
+| 최대공약수와 최소공배수 | [코드](programmers/lv1/unclassified/최대공약수와_최소공배수.cpp) | 수학 | 수정 필요 | `answer` 중복 선언 제거 필요, `gcd`·`lcm`은 C++17 사용 |
+| 노란불 신호등 | [코드](programmers/lv1/unclassified/노란불_신호등.cpp) | 완전탐색·수학 | 작성 중 | `te`만 작성되어 있어 풀이 구현 필요 |
 | 같은 숫자는 싫어 | [코드](programmers/lv1/stack_queue/같은_숫자는_싫어.cpp) | 스택/큐 | 검증 필요 | |
 
 ### 프로그래머스 Level 2
@@ -58,8 +57,8 @@ coding_test/
 | 문제 | 코드 | 유형 | 상태 | 메모 |
 | --- | --- | --- | --- | --- |
 | 게임 맵 최단거리 | [코드](programmers/lv2/bfs_dfs/게임_맵_최단거리.cpp) | DFS/BFS | 검증 필요 | |
-| 과제 진행하기 | [코드](programmers/lv2/stack_queue/과제_진행하기.cpp) | 스택·시뮬레이션 | 작성 중 | 시간 변환 함수와 풀이 구현 필요 |
-| 광물 캐기 | [코드](programmers/lv2/greedy/광물_캐기.cpp) | 그리디·정렬 | 검증 필요 | |
+| 과제 진행하기 | [코드](programmers/lv2/unclassified/과제_진행하기.cpp) | 스택·시뮬레이션 | 작성 중 | 시간 변환 함수와 풀이 구현 필요 |
+| 광물 캐기 | [코드](programmers/lv2/unclassified/광물_캐기.cpp) | 그리디·정렬 | 검증 필요 | |
 | 기능개발 | [코드](programmers/lv2/stack_queue/기능개발.cpp) | 스택/큐 | 수정 필요 | 동일한 solution 함수가 두 개 있어 오답 예제와 풀이 분리 필요 |
 | 다리를 지나는 트럭 | [코드](programmers/lv2/stack_queue/다리를_지나는_트럭.cpp) | 스택/큐 | 검증 필요 | |
 | 올바른 괄호 | [코드](programmers/lv2/stack_queue/올바른_괄호.cpp) | 스택/큐 | 작성 중 | 괄호 처리와 반환 구현 필요, 함수명 soltuion 확인 필요 |
@@ -86,7 +85,7 @@ coding_test/
 - [DFS/BFS](https://school.programmers.co.kr/learn/courses/30/parts/12421): 게임 맵 최단거리
 - [완전탐색](https://school.programmers.co.kr/learn/courses/30/parts/12230): 모의고사
 - [그래프](https://school.programmers.co.kr/learn/courses/30/parts/14393): 가장 먼 노드, 순위
-- 아래 문제는 공식 알고리즘 태그가 아닌 문제 설명에 따른 분류입니다.
+- 아래 문제는 공식 알고리즘 분류가 없어 `unclassified/`에 저장합니다. 표의 유형과 다음 설명은 참고용 풀이 유형입니다.
   - [과제 진행하기](https://school.programmers.co.kr/learn/courses/30/lessons/176962): 중단한 과제를 최근 순으로 재개하므로 스택·시뮬레이션
   - [광물 캐기](https://school.programmers.co.kr/learn/courses/30/lessons/172927): 5개 단위의 채굴 비용을 비교하는 그리디·정렬 (DFS 풀이도 가능)
   - [가운데 글자 가져오기](https://school.programmers.co.kr/learn/courses/30/lessons/12903): 문자열
